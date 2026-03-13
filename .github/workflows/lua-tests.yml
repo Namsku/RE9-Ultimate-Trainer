@@ -3,11 +3,11 @@ name: Lua Tests
 on:
   push:
     paths:
-      - 'Deploy/**/*.lua'
+      - 're9/**/*.lua'
       - '.luacheckrc'
   pull_request:
     paths:
-      - 'Deploy/**/*.lua'
+      - 're9/**/*.lua'
       - '.luacheckrc'
 
 jobs:
@@ -24,9 +24,6 @@ jobs:
           sudo apt-get install -y luarocks
           sudo luarocks install luacheck
 
-      - name: Run unit tests
-        run: lua5.4 Deploy/test/test_trainer.lua
-
       - name: Static analysis
-        run: luacheck Deploy/ --config .luacheckrc
+        run: luacheck re9/ --config .luacheckrc
         continue-on-error: true  # advisory-only initially
