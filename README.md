@@ -11,14 +11,14 @@
 
 | Game | Status | Folder |
 |------|--------|--------|
-| **Resident Evil 9** | Primary target | `deploy/` |
+| **Resident Evil 9** | Primary target | `re9/` |
 | **Resident Evil 7** | Early WIP port | `re7/` |
 
 ## Installation
 
 ### RE9
 1. Install [REFramework](https://github.com/praydog/REFramework-nightly/releases) for RE9
-2. Copy `deploy/requiem_trainer.lua` and `deploy/requiem_trainer/` into `RE9/reframework/autorun/`
+2. Copy `re9/requiem_trainer.lua` and `re9/requiem_trainer/` into `%STEAM_RE9%/reframework/autorun/`
 3. Press **Insert** to toggle the trainer
 
 ### RE7
